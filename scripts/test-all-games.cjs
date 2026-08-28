@@ -91,8 +91,21 @@ async function testGame(browser, baseURL, gameDirName) {
       const text = msg.text();
       // Ignore common non-errors
       if (text.includes('favicon.ico') && text.includes('404')) return;
+      if (text.includes('Failed to load resource')) return;
       if (/\[Violation\]/i.test(text)) return;
       consoleErrors.push(text);
+    }
+  });
+  page.on('response', response => {
+    const url = new URL(response.url());
+    if (response.status() >= 400 && url.pathname !== '/favicon.ico') {
+      consoleErrors.push(`HTTP ${response.status()}: ${response.url()}`);
+    }
+  });
+  page.on('requestfailed', request => {
+    const url = new URL(request.url());
+    if (url.pathname !== '/favicon.ico') {
+      consoleErrors.push(`Request failed: ${request.url()} (${request.failure()?.errorText || 'unknown'})`);
     }
   });
 
@@ -351,7 +364,12 @@ async function main() {
   console.log(`Server running on ${baseURL}`);
 
   // Launch browser
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+    ...(process.env.PLAYWRIGHT_EXECUTABLE_PATH
+      ? { executablePath: process.env.PLAYWRIGHT_EXECUTABLE_PATH }
+      : {}),
+  });
   console.log('Browser launched.\n');
 
   // Run tests

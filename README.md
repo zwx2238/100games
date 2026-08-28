@@ -40,6 +40,15 @@ The result: 100 games spanning physics, puzzles, rhythm, strategy, word games, a
 
 Each game is a **single `index.html` file** containing all HTML, CSS, and JavaScript. No build step, no bundler, no external assets. Open any game file directly in a browser to play.
 
+## Curated self-host catalog
+
+`catalog.json` is a machine-readable inventory for source-based self-hosting.
+It keeps all 100 upstream entries auditable while marking 95 games as selected.
+The five excluded entries are `FIVE`, `SLOTS`, `KENO`, `ANTONYM`, and `BID`;
+each entry records its curation reason. Every catalog item also includes a
+browser-rendered preview image, category, input mode, language profile, and
+license metadata.
+
 ---
 
 ## Games
@@ -182,7 +191,7 @@ npx playwright install chromium
 Verifies all 100 games load without errors, render a canvas, and respond to a click.
 
 ```bash
-node scripts/test-all-games.js
+npm run test:games
 ```
 
 - Loads each game in a headless browser
@@ -195,7 +204,7 @@ node scripts/test-all-games.js
 Simulates 10 seconds of actual gameplay per game and tests rendering at 3 viewport sizes.
 
 ```bash
-node scripts/test-gameplay.js
+npm run test:gameplay
 ```
 
 - Simulates realistic input: clicks, drags, keyboard events across the canvas
@@ -210,8 +219,8 @@ node scripts/test-gameplay.js
 
 ```
 scripts/
-├── test-all-games.js              # Smoke test suite
-├── test-gameplay.js               # Gameplay + responsive test suite
+├── test-all-games.cjs             # Smoke test suite
+├── test-gameplay.cjs              # Gameplay + responsive test suite
 ├── test-report.html               # Smoke test visual report
 ├── test-gameplay-report.html      # Gameplay test visual report
 ├── screenshots/                   # Smoke test screenshots (200 images)

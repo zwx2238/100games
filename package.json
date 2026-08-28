@@ -7,13 +7,15 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:games": "node scripts/test-all-games.cjs",
+    "test:gameplay": "node scripts/test-gameplay.cjs",
     "lint": "eslint index.html play.html",
     "lint:all": "eslint \"**/*.html\"",
     "lint:fix": "eslint --fix index.html play.html"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "playwright": "^1.58.2"
   },

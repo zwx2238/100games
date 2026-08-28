@@ -72,9 +72,30 @@ function startServer() {
 function isIgnorableError(text) {
   if (text.includes('favicon.ico') && text.includes('404')) return true;
   if (/\[Violation\]/i.test(text)) return true;
-  if (text.includes('Failed to load resource') && text.includes('favicon')) return true;
+  if (text.includes('Failed to load resource')) return true;
   if (text.includes('net::ERR_')) return true;
   return false;
+}
+
+function collectPageErrors(page, errors) {
+  page.on('console', msg => {
+    if (msg.type() === 'error' && !isIgnorableError(msg.text())) {
+      errors.push(msg.text());
+    }
+  });
+  page.on('pageerror', err => errors.push(`PageError: ${err.message}`));
+  page.on('response', response => {
+    const url = new URL(response.url());
+    if (response.status() >= 400 && url.pathname !== '/favicon.ico') {
+      errors.push(`HTTP ${response.status()}: ${response.url()}`);
+    }
+  });
+  page.on('requestfailed', request => {
+    const url = new URL(request.url());
+    if (url.pathname !== '/favicon.ico') {
+      errors.push(`Request failed: ${request.url()} (${request.failure()?.errorText || 'unknown'})`);
+    }
+  });
 }
 
 // ── Capture canvas data URL for pixel comparison ───────────────────────────────
@@ -175,12 +196,7 @@ async function testGameplay(browser, baseURL, gameDirName) {
   const page = await context.newPage();
   const errors = [];
 
-  page.on('console', msg => {
-    if (msg.type() === 'error' && !isIgnorableError(msg.text())) {
-      errors.push(msg.text());
-    }
-  });
-  page.on('pageerror', err => errors.push(`PageError: ${err.message}`));
+  collectPageErrors(page, errors);
 
   try {
     // Load game
@@ -292,12 +308,7 @@ async function testResponsive(browser, baseURL, gameDirName) {
     const page = await context.newPage();
     const errors = [];
 
-    page.on('console', msg => {
-      if (msg.type() === 'error' && !isIgnorableError(msg.text())) {
-        errors.push(msg.text());
-      }
-    });
-    page.on('pageerror', err => errors.push(`PageError: ${err.message}`));
+    collectPageErrors(page, errors);
 
     try {
       const url = `${baseURL}/${gameDirName}/index.html`;
@@ -572,7 +583,12 @@ async function main() {
   const baseURL = `http://127.0.0.1:${port}`;
   console.log(`Server running on ${baseURL}`);
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+    ...(process.env.PLAYWRIGHT_EXECUTABLE_PATH
+      ? { executablePath: process.env.PLAYWRIGHT_EXECUTABLE_PATH }
+      : {}),
+  });
   console.log('Browser launched.\n');
 
   // Part 1: Gameplay simulation
