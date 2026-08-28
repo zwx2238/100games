@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "catalog:sync": "node scripts/sync-open-games-catalog.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:games": "node scripts/test-all-games.cjs",

@@ -40,14 +40,14 @@ The result: 100 games spanning physics, puzzles, rhythm, strategy, word games, a
 
 Each game is a **single `index.html` file** containing all HTML, CSS, and JavaScript. No build step, no bundler, no external assets. Open any game file directly in a browser to play.
 
-## Curated self-host catalog
+## Self-host catalog
 
 `catalog.json` is a machine-readable inventory for source-based self-hosting.
-It keeps all 100 upstream entries auditable while marking 95 games as selected.
-The five excluded entries are `FIVE`, `SLOTS`, `KENO`, `ANTONYM`, and `BID`;
-each entry records its curation reason. Every catalog item also includes a
-browser-rendered preview image, category, input mode, language profile, and
-license metadata.
+It exposes all 100 games as playable entries. Quality, language, device, and
+casino-style content are represented as filterable metadata instead of being
+used to hide source-available games. Every catalog item also includes a
+browser-rendered preview image, a complete gameplay summary, category, input
+mode, language profile, and license metadata.
 
 ---
 

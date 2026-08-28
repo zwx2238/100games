@@ -1,19 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "source": {
     "repository": "https://github.com/zwx2238/100games",
     "upstream": "https://github.com/Srikanth-AD/100games",
     "license": "MIT"
   },
-  "selection": {
+  "inventory": {
     "total": 100,
-    "selected": 95,
-    "excluded": 5,
-    "criteria": [
-      "Playable in a mobile browser without runtime dependencies",
-      "Source remains a single-file HTML game in the operator-owned fork",
-      "Exclude explicit casino or lottery simulations",
-      "Exclude entries with a major audience or mobile usability mismatch"
+    "playable": 100,
+    "policy": [
+      "Keep every source-available browser game in the self-hosted catalog",
+      "Represent audience, language, device, and content concerns as filterable metadata",
+      "Do not use curation labels to remove playable source entries"
     ]
   },
   "games": [
@@ -21,7 +19,7 @@
       "id": "drift",
       "number": 1,
       "title": "DRIFT",
-      "description": "Descent into the deep",
+      "description": "Descend into the deep — dodge coral obstacles and collect pickups in a neon-lit abyss",
       "directory": "game-01-drift",
       "entry": "game-01-drift/index.html",
       "coverSource": "game-01-drift/drift-preview.png",
@@ -32,13 +30,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "flick",
       "number": 2,
       "title": "FLICK",
-      "description": "Flick to victory",
+      "description": "Flick to victory — aim and launch with precision",
       "directory": "game-02-flick",
       "entry": "game-02-flick/index.html",
       "coverSource": "game-02-flick/flick-preview.png",
@@ -49,13 +50,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "splat",
       "number": 3,
       "title": "SPLAT",
-      "description": "Water Balloon Mayhem",
+      "description": "Water balloon mayhem — tap balloons and ducks as they move along the path",
       "directory": "game-03-splat",
       "entry": "game-03-splat/index.html",
       "coverSource": "game-03-splat/splat-preview.png",
@@ -66,13 +70,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "patintero",
       "number": 4,
       "title": "PATINTERO",
-      "description": "Cross all lines",
+      "description": "Cross all lines — Filipino-inspired court game, evade AI guards",
       "directory": "game-04-patintero",
       "entry": "game-04-patintero/index.html",
       "coverSource": "game-04-patintero/patintero-preview.png",
@@ -83,13 +90,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "barrack",
       "number": 5,
       "title": "BARRAGE",
-      "description": "Incoming!",
+      "description": "Incoming! Survive relentless waves of projectiles",
       "directory": "game-05-barrack",
       "entry": "game-05-barrack/index.html",
       "coverSource": "game-05-barrack/barrage-preview.png",
@@ -100,13 +110,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "swarm",
       "number": 6,
       "title": "SWARM",
-      "description": "They're coming",
+      "description": "They're coming — hold off wave after wave of swarming enemies",
       "directory": "game-06-swarm",
       "entry": "game-06-swarm/index.html",
       "coverSource": "game-06-swarm/swarm-preview.png",
@@ -117,13 +130,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "sortit",
       "number": 7,
       "title": "SORT IT",
-      "description": "Planet sorting puzzle",
+      "description": "Planet sorting puzzle — drag and drop planets into the right order",
       "directory": "game-07-sortit",
       "entry": "game-07-sortit/index.html",
       "coverSource": "game-07-sortit/sortit-preview.png",
@@ -134,13 +150,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "slapdeck",
       "number": 8,
       "title": "SLAP DECK",
-      "description": "Card battle",
+      "description": "Card battle — slap the right cards faster than your opponent",
       "directory": "game-08-slapdeck",
       "entry": "game-08-slapdeck/index.html",
       "coverSource": "game-08-slapdeck/slapdeck-preview.png",
@@ -151,13 +170,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "cast",
       "number": 9,
       "title": "CAST",
-      "description": "Gone fishing",
+      "description": "Gone fishing — time your cast perfectly to hook the big one",
       "directory": "game-09-cast",
       "entry": "game-09-cast/index.html",
       "coverSource": "game-09-cast/cast-preview.png",
@@ -168,13 +190,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "chopper",
       "number": 10,
       "title": "CHOPPER",
-      "description": "Stay airborne",
+      "description": "Stay airborne — tap to flap and dodge everything in your path",
       "directory": "game-10-chopper",
       "entry": "game-10-chopper/index.html",
       "coverSource": "game-10-chopper/chopper-preview.png",
@@ -185,13 +210,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "bash",
       "number": 11,
       "title": "BASH",
-      "description": "Something's hiding...",
+      "description": "Something's hiding — punch the shaking bricks before creatures break through",
       "directory": "game-11-bash",
       "entry": "game-11-bash/index.html",
       "coverSource": "game-11-bash/bash-preview.png",
@@ -202,13 +230,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "hustle",
       "number": 12,
       "title": "HUSTLE",
-      "description": "Follow the coin",
+      "description": "Follow the coin — watch the hands shuffle, then pick where it's hiding",
       "directory": "game-12-hustle",
       "entry": "game-12-hustle/index.html",
       "coverSource": "game-12-hustle/hustle-preview.png",
@@ -219,13 +250,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "harvest",
       "number": 13,
       "title": "HARVEST",
-      "description": "Grow, harvest, sell, shoo crows",
+      "description": "Grow crops, shoo crows, harvest at the right time, and sell for coins",
       "directory": "game-13-harvest",
       "entry": "game-13-harvest/index.html",
       "coverSource": "game-13-harvest/harvest-preview.png",
@@ -236,13 +270,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "dig",
       "number": 14,
       "title": "DIG",
-      "description": "Catch things surfacing from the sand",
+      "description": "Tap crabs, clams, starfish and coins surfacing from the sand",
       "directory": "game-14-dig",
       "entry": "game-14-dig/index.html",
       "coverSource": "game-14-dig/dig-preview.png",
@@ -253,13 +290,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pyramid",
       "number": 15,
       "title": "PYRAMID",
-      "description": "Build yours, topple theirs",
+      "description": "Race the AI to stack 10 stones into a pyramid",
       "directory": "game-15-pyramid",
       "entry": "game-15-pyramid/index.html",
       "coverSource": "game-15-pyramid/pyramid-preview.png",
@@ -270,13 +310,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "tinik",
       "number": 16,
       "title": "LUKSONG TINIK",
-      "description": "Filipino jumping game",
+      "description": "Filipino jumping game — leap over the growing tinik",
       "directory": "game-16-tinik",
       "entry": "game-16-tinik/index.html",
       "coverSource": "game-16-tinik/luksongtinik-preview.png",
@@ -287,13 +330,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "archer",
       "number": 17,
       "title": "ARCHER",
-      "description": "Aim true — mind the birds",
+      "description": "POV bow-and-arrow — aim at the target while birds disturb your shot",
       "directory": "game-17-archer",
       "entry": "game-17-archer/index.html",
       "coverSource": "game-17-archer/archer-preview.png",
@@ -304,13 +350,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "ringtoss",
       "number": 18,
       "title": "RING TOSS",
-      "description": "Toss rings onto pegs",
+      "description": "Fairground ring toss — swipe to throw rings onto pegs and bottles",
       "directory": "game-18-ringtoss",
       "entry": "game-18-ringtoss/index.html",
       "coverSource": "game-18-ringtoss/ringtoss-preview.png",
@@ -321,13 +370,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "decode",
       "number": 19,
       "title": "DECODE",
-      "description": "Spot the word in the matrix",
+      "description": "Matrix-style word hunt — spot words in the falling cascade",
       "directory": "game-19-decode",
       "entry": "game-19-decode/index.html",
       "coverSource": "game-19-decode/decode-preview.png",
@@ -338,13 +390,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "boomerang",
       "number": 20,
       "title": "BOOMERANG",
-      "description": "Hit fruits before the birds steal them",
+      "description": "Throw a boomerang to knock fruits off trees before birds steal them",
       "directory": "game-20-boomerang",
       "entry": "game-20-boomerang/index.html",
       "coverSource": "game-20-boomerang/boomerang-preview.png",
@@ -355,13 +410,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "mine",
       "number": 21,
       "title": "MINE",
-      "description": "Dig minerals, hide from bats",
+      "description": "Dig minerals in a cave grid — dodge bats and hide in lantern safe zones",
       "directory": "game-21-mine",
       "entry": "game-21-mine/index.html",
       "coverSource": "game-21-mine/mine-preview.png",
@@ -372,13 +430,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "maze",
       "number": 22,
       "title": "MAZE",
-      "description": "Find the exit, hide from pursuers",
+      "description": "Navigate a procedurally generated maze — hide from pursuers",
       "directory": "game-22-maze",
       "entry": "game-22-maze/index.html",
       "coverSource": "game-22-maze/maze-preview.png",
@@ -389,13 +450,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "fence",
       "number": 23,
       "title": "FENCE",
-      "description": "Fencing duel against the AI",
+      "description": "Fencing duel against AI — attack, parry, advance, retreat",
       "directory": "game-23-fence",
       "entry": "game-23-fence/index.html",
       "coverSource": "game-23-fence/fence-preview.png",
@@ -406,13 +470,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "regatta",
       "number": 24,
       "title": "REGATTA",
-      "description": "Boat race — collect flags",
+      "description": "Steer your boat down a river — collect flags, dodge rocks",
       "directory": "game-24-regatta",
       "entry": "game-24-regatta/index.html",
       "coverSource": "game-24-regatta/regatta-preview.png",
@@ -423,13 +490,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "dunes",
       "number": 25,
       "title": "DUNES",
-      "description": "Desert buggy race against AI",
+      "description": "Desert buggy race against AI — collect turbo boosts and gems",
       "directory": "game-25-dunes",
       "entry": "game-25-dunes/index.html",
       "coverSource": "game-25-dunes/dunes-preview.png",
@@ -440,7 +510,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "seesaw",
@@ -457,7 +530,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "paddlerace",
@@ -474,7 +550,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "wellclimb",
@@ -491,7 +570,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pinball",
@@ -508,7 +590,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "spelunk",
@@ -525,7 +610,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "piko",
@@ -542,7 +630,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "hilo",
@@ -559,13 +650,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "ropeclimb",
       "number": 33,
       "title": "ROPE CLIMB",
-      "description": "Swing left & right to dodge falling obstacles",
+      "description": "Swing left and right to dodge falling obstacles",
       "directory": "game-33-ropeclimb",
       "entry": "game-33-ropeclimb/index.html",
       "coverSource": "game-33-ropeclimb/ropeclimb-preview.png",
@@ -576,7 +670,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pattern",
@@ -593,7 +690,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "five",
@@ -604,14 +704,18 @@
       "entry": "game-35-five/index.html",
       "coverSource": "game-35-five/five-preview.png",
       "color": "#ff4081",
-      "category": "Arcade",
+      "category": "Casino",
       "language": "Language-light",
       "input": "Touch / Mouse",
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": false,
-      "exclusionReason": "Casino-style video poker with a payout table."
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": [
+        "casino"
+      ]
     },
     {
       "id": "slots",
@@ -622,14 +726,18 @@
       "entry": "game-36-slots/index.html",
       "coverSource": "game-36-slots/slots-preview.png",
       "color": "#ff9800",
-      "category": "Arcade",
+      "category": "Casino",
       "language": "Language-light",
       "input": "Touch / Mouse",
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": false,
-      "exclusionReason": "Pure slot-machine simulation with weighted reels and jackpot payouts."
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": [
+        "casino"
+      ]
     },
     {
       "id": "bazaar",
@@ -646,7 +754,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "switchboard",
@@ -663,7 +774,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "nexus",
@@ -680,7 +794,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "lighthouse",
@@ -697,7 +814,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "catapult",
@@ -714,7 +834,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pinwheel",
@@ -731,7 +854,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "sandstorm",
@@ -748,7 +874,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "flood",
@@ -765,7 +894,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "loupe",
@@ -782,7 +914,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "tug",
@@ -799,7 +934,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "fossil",
@@ -816,7 +954,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "fuse",
@@ -833,13 +974,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "stack",
       "number": 49,
       "title": "STACK",
-      "description": "Drop the car — build the tallest tower",
+      "description": "Drop the block — build the tallest tower",
       "directory": "game-49-stack",
       "entry": "game-49-stack/index.html",
       "coverSource": "game-49-stack/stack-preview.png",
@@ -850,7 +994,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "keno",
@@ -861,14 +1008,18 @@
       "entry": "game-50-keno/index.html",
       "coverSource": "game-50-keno/keno-preview.png",
       "color": "#ffd740",
-      "category": "Arcade",
+      "category": "Casino",
       "language": "Language-light",
       "input": "Touch / Mouse",
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": false,
-      "exclusionReason": "Lottery-style Keno simulation centered on random draws and jackpots."
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": [
+        "casino"
+      ]
     },
     {
       "id": "echo",
@@ -885,7 +1036,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "crossfire",
@@ -902,7 +1056,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "curl",
@@ -919,7 +1076,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pipes",
@@ -936,7 +1096,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "juggle",
@@ -953,7 +1116,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "kite",
@@ -970,7 +1136,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "lasso",
@@ -987,7 +1156,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pivot",
@@ -1004,7 +1176,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "undertow",
@@ -1021,7 +1196,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "stampede",
@@ -1038,7 +1216,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "spindle",
@@ -1055,7 +1236,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pluck",
@@ -1072,7 +1256,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "switchword",
@@ -1089,7 +1276,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "antonym",
@@ -1106,8 +1296,13 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": false,
-      "exclusionReason": "English-only vocabulary mechanic is not accessible to the primary Chinese mobile audience."
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": [
+        "word",
+        "english"
+      ]
     },
     {
       "id": "flicker",
@@ -1124,7 +1319,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "gridlock",
@@ -1141,7 +1339,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "ferment",
@@ -1158,7 +1359,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "weld",
@@ -1175,7 +1379,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "tide",
@@ -1192,7 +1399,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "comet",
@@ -1209,7 +1419,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "slalom",
@@ -1226,7 +1439,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "trampoline",
@@ -1243,13 +1459,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "topple",
       "number": 73,
       "title": "TOPPLE",
-      "description": "Stack blocks & knock down the opponent",
+      "description": "Stack blocks and knock down the opponent's tower",
       "directory": "game-73-topple",
       "entry": "game-73-topple/index.html",
       "coverSource": "game-73-topple/topple-preview.png",
@@ -1260,7 +1479,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "ricochet",
@@ -1277,7 +1499,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "avalanche",
@@ -1294,7 +1519,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pendulum",
@@ -1311,7 +1539,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "metronome",
@@ -1328,7 +1559,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "freefall",
@@ -1345,7 +1579,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "orbit",
@@ -1362,7 +1599,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "tangram",
@@ -1379,7 +1619,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "circuit",
@@ -1396,7 +1639,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "cipher",
@@ -1413,7 +1659,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "mirror",
@@ -1430,7 +1679,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "domino",
@@ -1447,7 +1699,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "alchemy",
@@ -1464,7 +1719,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "tightrope",
@@ -1481,7 +1739,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "crane",
@@ -1498,7 +1759,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "drip",
@@ -1515,7 +1779,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "swat",
@@ -1532,7 +1799,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "pickpocket",
@@ -1549,7 +1819,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "firefly",
@@ -1566,7 +1839,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "geyser",
@@ -1583,7 +1859,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "roots",
@@ -1600,7 +1879,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "icebreak",
@@ -1617,7 +1899,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "blackout",
@@ -1634,7 +1919,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "abacus",
@@ -1651,7 +1939,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "bid",
@@ -1668,8 +1959,13 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": false,
-      "exclusionReason": "Fixed-size auction betting loop is less mobile-friendly and overlaps with gambling-style play."
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": [
+        "auction",
+        "bluffing"
+      ]
     },
     {
       "id": "anagram",
@@ -1686,7 +1982,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "semaphore",
@@ -1703,13 +2002,16 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     },
     {
       "id": "gauntlet",
       "number": 100,
       "title": "GAUNTLET",
-      "description": "The grand finale — 5 micro-challenges",
+      "description": "The grand finale — 5 micro-challenges with fireworks",
       "directory": "game-100-gauntlet",
       "entry": "game-100-gauntlet/index.html",
       "coverSource": "game-100-gauntlet/gauntlet-preview.png",
@@ -1720,7 +2022,10 @@
       "session": "2-8 min",
       "author": "Srikanth-AD",
       "license": "MIT",
-      "selected": true
+      "playable": true,
+      "status": "active",
+      "quality": "Verified",
+      "contentTags": []
     }
   ]
 }
